@@ -15,7 +15,7 @@ const postBlog = async (title: string | undefined, description: string | undefin
   return res.json();
 };
 
-const PostBlog = () => {
+const AddBlog = () => {
   const router = useRouter();
   const titleRef = useRef<HTMLInputElement | null>(null);
   const descriptionRef = useRef<HTMLTextAreaElement | null>(null);
@@ -59,4 +59,4 @@ const PostBlog = () => {
   );
 };
 
-export default PostBlog;
+export default AddBlog;
